@@ -1,3 +1,6 @@
 Repo for Connection Labs codes.
+
 Week 0, the pre-assignment is a simple webpage
-Week 1, HTML and CSS
+
+Week 1: https://hyinyi.github.io/IMA-CL-Repo/week1/
+
