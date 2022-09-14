@@ -1,0 +1,28 @@
+body{
+    padding: 20px;
+    font-family:Verdana;
+}
+
+.project_section {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_desc {
+    width: 49%;
+    display:inline-block;
+    margin: 0px;
+    padding: 10px;
+}
+
+.project_video {
+    width: 49%
+}
+
+.project_image{
+    width: 300px;
+}
