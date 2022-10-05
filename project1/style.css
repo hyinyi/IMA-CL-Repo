@@ -40,19 +40,18 @@ h1{
 	z-index: -1;
 }
 
-.project_button1::after{
-    border:0;
-}
-.project_button1 {
-    width: 200px;
-    height: 46px;
-    line-height: 46px;
-    background: #d1e2ac;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 27px;
-    outline: none;
-    animation: zoomIn 1.5s infinite;
-    text-align: center;
-}
 
+.btn {
+	cursor: pointer;
+	width: 200px;
+	height: 46px;
+	line-height: 46px;
+	background: #d1e2ac;
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 27px;
+	outline: none;
+	animation: zoomIn 1.5s infinite;
+	text-align: center;
+	border: none;
+}
