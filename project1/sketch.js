@@ -45,7 +45,7 @@ function setup() {
 function draw() {
 	textSize(150)
 	fill(242, 244, 247, 5)
-	text(year, 1200, 700)
+	text(year, 1100, 700)
 }
 
 function star(x, y, radius1, radius2, npoints) {
