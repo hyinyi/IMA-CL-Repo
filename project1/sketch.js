@@ -16,20 +16,16 @@ function setup() {
 			// console.log(data.movie.length)
 
 			let movieArray = data
-			let randomNumber = Math.floor(
-				Math.random() * movieArray.movie.length
-			)
-
-			// console.log(movieArray.movie[randomNumber].rating);
+	
 
 			year = movieArray.movie[randomNumber].year
+			console.log(randomNumber)
 			rating = movieArray.movie[randomNumber].rating
 			console.log(typeof rating)
 			nData = data.movie
-			
 
 			for (let i = 0; i < Math.floor(rating); i++) {
-				fill(245, 233, 66, 15*rating)
+				fill(245, 233, 66, 15 * rating)
 				console.log(rating)
 				console.log(Math.floor(rating))
 				noStroke()
@@ -37,7 +33,7 @@ function setup() {
 				let y = random(height)
 				let d = 150
 				circle(x, y, d)
-				star(x,y,70,30,5)
+				star(x, y, 70, 30, 5)
 			}
 		})
 	const myCanvas = createCanvas(window.innerWidth, window.innerHeight)
@@ -50,21 +46,19 @@ function draw() {
 	textSize(150)
 	fill(242, 244, 247, 5)
 	text(year, 1200, 700)
-
-	
 }
 
 function star(x, y, radius1, radius2, npoints) {
-	let angle = TWO_PI / npoints;
-	let halfAngle = angle / 2.0;
-	beginShape();
+	let angle = TWO_PI / npoints
+	let halfAngle = angle / 2.0
+	beginShape()
 	for (let a = 0; a < TWO_PI; a += angle) {
-	  let sx = x + cos(a) * radius2;
-	  let sy = y + sin(a) * radius2;
-	  vertex(sx, sy);
-	  sx = x + cos(a + halfAngle) * radius1;
-	  sy = y + sin(a + halfAngle) * radius1;
-	  vertex(sx, sy);
+		let sx = x + cos(a) * radius2
+		let sy = y + sin(a) * radius2
+		vertex(sx, sy)
+		sx = x + cos(a + halfAngle) * radius1
+		sy = y + sin(a + halfAngle) * radius1
+		vertex(sx, sy)
 	}
-	endShape(CLOSE);
-  }
+	endShape(CLOSE)
+}
